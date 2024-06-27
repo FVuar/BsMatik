@@ -1,4 +1,4 @@
-<img src="./img/logo192.png" width="192" height="192" alt="bsmatik" />
+<img src="./img/banner.webp" width="900" height="200" alt="bsmatik" />
 
 # BsMatik
 BsMatik is a calculation application.
