@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BsMatik</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./cahd.min.css">
+    <title>Simple Calculator | BsMatik</title>
+    <meta name="description"
+        content="BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations from this application">
+    <meta name="keywords"
+        content="bsmatik, matik, calculator, calculator app, calculator application, math calculator, computation tool, basic calculator, scientific calculator, mobile calculator, calculation app, mathematical application, hesap makinesi, matematik hesaplama, işlem yapma uygulaması, basit hesap makinesi, bilimsel hesap makinesi, mobil hesap makinesi, hesaplama aracı, matematik uygulaması, Windows calculator app, desktop calculator app, Windows 10 calculator, Windows 11 calculator, Microsoft calculator app, touch screen calculator, offline calculator app, free calculator app, download calculator app, Windows store calculator">
+    <meta name="author" content="ahmetcanisik">
+    <meta name="publisher" content="ahmetcanisik">
+    <meta name="rating" content="general">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/logo192.png">
+    <meta property="og:title" content="BsMatik, Simple Calculator">
+    <meta property="og:description" content="BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations from this application">
+    <meta property="og:image" content="https://fvuar.github.io/bsmatik/img/screenshot.webp">
+    <meta property="og:url" content="https://fvuar.github.io/bsmatik">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BsMatik, Simple Calculator">
+    <meta name="twitter:description" content="BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations from this application">
+    <meta name="twitter:image" content="https://fvuar.github.io/bsmatik/img/screenshot.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, system-ui, 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        }
-        h1 {
-            font-weight: 900;
-        }
-        .mini-title {
-            font-weight: 200;
-        }
-        footer {
-            font-size: small;
-        }
-    </style>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/cahd.min.css">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
+
 <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <header class="container">
-        <div class="d-flex gap-2">
+        <div class="header-content gap-2">
             <h1> BsMatik </h1>
-            <select name="changeLanguage" id="changeLanguage" class="form-select" aria-label="Select your language">
-                <option value="en">English</option>
-                <option value="tr">Turkish</option>
-            </select>
+            <div class="preferences">
+                <div class="header-row">
+                    <label id="changeLanguageLabel" for="changeLanguage"></label>
+                    <select name="changeLanguage" id="changeLanguage" class="form-select" aria-label="Select your language">
+                        <option value="en">English</option>
+                        <option value="tr">Turkish</option>
+                    </select>
+                </div>
+                <div class="header-row">
+                    <label id="changeThemeLabel" for="changeTheme"></label>
+                    <select name="changeTheme" id="changeTheme" class="form-select" aria-label="Select your theme">
+                        <option value="system">System</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </header>
-    <main class="container" id="publish">
-        <div class="row">
-            <p class="mini-title">
-                BsMatik, hesap makinesi uygulamasıdır.
-            </p>
+    <main class="container">
+        <div class="container">
+            <img class="banner" src="./img/screenshot.webp" alt="bsmatik">
         </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h3>Nedir bu BsMatik?</h3>
+        <div class="content" id="publish">
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3>Nedir bu BsMatik?</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        BsMatik bir hesap makinesi uygulamasıdır. Toplama, çıkarma, çarpma ve bölme işlemlerini bu
+                        uygulamadan kolaylıkla gerçekleştirebilirsiniz.
+                    </p>
+                </div>
             </div>
-            <div class="col">
-                <p>
-                    BsMatik bir hesap makinesi uygulamasıdır.  Toplama, çıkarma, çarpma ve bölme işlemlerini bu uygulamadan kolaylıkla gerçekleştirebilirsiniz.
-                </p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3>BsMatik Nasıl Kullanılır?</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        Uygulamaya girdiğinizde aşağıda toplama, çıkarma, çarpma ve bölme işlemleri yer almaktadır.
+                        Yapacağınız hesaplamaya göre birini seçin, ardından ilgili girdi alanlarına sayılarınızı girin,
+                        eşitle butonuna bastığınızda size verdiğiniz işlemin sonucunu döndürecektir.
+                    </p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h3>BsMatik Nasıl Kullanılır?</h3> 
-            </div>
-            <div class="col">
-                <p>
-                    Uygulamaya girdiğinizde aşağıda toplama, çıkarma, çarpma ve bölme işlemleri yer almaktadır.  Yapacağınız hesaplamaya göre birini seçin, ardından ilgili girdi alanlarına sayılarınızı girin, eşitle butonuna bastığınızda size verdiğiniz işlemin sonucunu döndürecektir.
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h3>Nasıl İndirilir ve Kurululur?</h3>
-            </div>
-            <div class="col">
-                <p>
-                    BsMatik'in Windows için son sürümünü aşağıdaki bağlantıdan indirebilirsiniz. Kurulum için exe dosyasına çift tıklayıp başlatmanız yeterlidir.
-                    <h3><a target="_blank" href="https://github.com/FVuar/BsMatik/releases/latest"><code>En Son Sürümü İndirmek için Tıklayınız</code></a></h3>
-                </p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3>Nasıl İndirilir ve Kurululur?</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        BsMatik'in Windows için son sürümünü aşağıdaki bağlantıdan indirebilirsiniz. Kurulum için exe
+                        dosyasına çift tıklayıp başlatmanız yeterlidir.
+                    <h3><a target="_blank"
+                            href="https://github.com/FVuar/BsMatik/releases/latest"><code>En Son Sürümü İndirmek için Tıklayınız</code></a>
+                    </h3>
+                    </p>
 
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h3>Uygulamada oluşabilecek hatalar!</h3>
-            </div>
-            <div class="col">
-                <p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3>Uygulamada oluşabilecek hatalar!</h3>
+                </div>
+                <div class="col">
+                    <p>
                     <ul>
                         <li>Lütfen metinsel bir değer girmekten kaçının.</li>
-                        <li>Girdi alanlarına kopyala-yapıştır işlevi uygulamayınız.</li> 
-                        <li>Lütfen özel karakterler(.,*/- vb.) kullanmayınız.</li>   
+                        <li>Girdi alanlarına kopyala-yapıştır işlevi uygulamayınız.</li>
+                        <li>Lütfen özel karakterler(.,*/- vb.) kullanmayınız.</li>
                     </ul>
-                </p>
+                    </p>
 
+                </div>
             </div>
+            <hr>
         </div>
-        <hr>
     </main>
     <footer class="container">
         <div class="row">
@@ -100,9 +131,14 @@
     </footer>
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="./langs.js"></script>
-    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="./script/utils.js"></script>
+    <script src="./script/main.js"></script>
 </body>
+
 </html>

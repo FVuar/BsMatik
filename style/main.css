@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', -apple-system, system-ui, 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--slate-1);
+    color: var(--slate-11);
+}
+
+h1 {
+    font-weight: 900;
+}
+
+header {
+    position: sticky;
+    background-color: var(--slate-1);
+    color: var(--slate-11);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+footer {
+    font-size: small;
+}
+
+.banner {
+    width: 100%;
+    height: 619px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.preferences {
+    display: flex;
+    gap: 10px;
+}
+
+.header-row {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        height: 309px;
+    }
+}
+
+@media (max-width: 370px) {
+    .banner {
+        height: 154px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    select {
+        background-color: var(--slate-2) !important;
+        color: var(--slate-11) !important;
+    }
+}
+[data-theme="dark"] {
+    color-scheme: dark;
+    select {
+        background-color: var(--slate-2) !important;
+        color: var(--slate-11) !important;
+    }
+}

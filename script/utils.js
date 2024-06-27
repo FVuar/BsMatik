@@ -1,5 +1,36 @@
-if (!localStorage.getItem('lang')) {
-    localStorage.setItem('lang', 'en');
+if (!localStorage.getItem('preferences')) {
+    localStorage.setItem('preferences', JSON.stringify({ lang: "en", theme: "system" }));
+}
+function Update() {
+    return {
+        storage: function(pref = { lang: undefined, theme: undefined }) {
+            localStorage.setItem('preferences', JSON.stringify(pref));
+        },
+        preferences: function(pref = {lang: undefined, theme: undefined}) {
+            let local = JSON.parse(localStorage.getItem('preferences')) || {};
+            let opt = {
+                lang: pref.lang === undefined ? local.lang : pref.lang,
+                theme: pref.theme === undefined ? local.theme : pref.theme
+            };
+            this.storage(opt);
+        }
+    }
+}
+const update = Update();
+
+function Meta(meta = {
+    lang : "en",
+    title : "Simple Calculator",
+    description: "BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations from this application"
+}) {
+    const project_name = "BsMatik";
+    document.querySelector('title').innerText = `${meta.title} | ${project_name}`;
+    document.querySelector('meta[name="description"]').content = meta.description;
+    document.querySelector('meta[property="og:title"]').content = `${project_name}, ${meta.title}`;
+    document.querySelector('meta[property="og:description"]').content = meta.description;
+    document.querySelector('meta[name="twitter:title"]').content = `${project_name}, ${meta.title}`;
+    document.querySelector('meta[name="twitter:description"]').content = meta.description;
+    document.documentElement.lang = meta.lang;
 }
 function Translate() {
     return {
@@ -8,11 +39,6 @@ function Translate() {
                 parent: document.getElementById('publish'),
                 tr: function() {
                     const inner = `
-<div class="row">
-    <p class="mini-title">
-        BsMatik, hesap makinesi uygulamasıdır.
-    </p>
-</div>
 <hr>
 <div class="row">
     <div class="col">
@@ -66,16 +92,12 @@ function Translate() {
 </div>
 <hr>
                     `;
-                    localStorage.setItem('lang', 'tr');
+                    update.preferences({ lang: 'tr' })
+                    Meta({ lang: 'tr', title: 'Basit Hesap Makinesi', description: "BsMatik bir hesap makinesi uygulamasıdır. Toplama, çıkarma, çarpma ve bölme işlemlerini bu uygulamadan kolaylıkla gerçekleştirebilirsiniz." });
                     this.parent.innerHTML = inner;
                 },
                 en: function() {
                     const inner = `
-<div class="row">
-    <p class="mini-title">
-        BsMatik is a calculation application.
-    </p>
-</div>
 <hr>
 <div class="row">
     <div class="col">
@@ -129,7 +151,8 @@ function Translate() {
 </div>
 <hr>
                     `;
-                    localStorage.setItem('lang', 'en');
+                    update.preferences({ lang: 'en' })
+                    Meta()
                     this.parent.innerHTML = inner;
                 }
             }

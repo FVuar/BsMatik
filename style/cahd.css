@@ -858,6 +858,7 @@
     --rose-11: #4c0519;
 }
 [data-theme="dark"] {
+    color-scheme:dark;
     --slate-1: #020617;
         --slate-2: #0f172a;
         --slate-3: #1e293b;
