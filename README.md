@@ -1,3 +1,5 @@
+<img src="./img/logo192.png" width="192" height="192" alt="bsmatik" />
+
 # BsMatik
 BsMatik is a calculation application.
 
