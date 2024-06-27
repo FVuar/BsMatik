@@ -69,7 +69,7 @@ function Translate() {
     <div class="col">
         <p>
             BsMatik'in Windows için son sürümünü aşağıdaki bağlantıdan indirebilirsiniz. Kurulum için exe dosyasına çift tıklayıp başlatmanız yeterlidir.
-            <h4><a target="_blank" href="https://github.com/FVuar/BsMatik/releases/latest"><code>En Son Sürümü İndirmek için Tıklayınız</code></a></h4>
+            <h4><a class="btn btn-success" target="_blank" href="https://github.com/FVuar/BsMatik/releases/latest"><code>En Son Sürümü İndirmek için Tıklayınız</code></a></h4>
         </p>
 
     </div>
@@ -128,7 +128,7 @@ function Translate() {
     <div class="col">
         <p>
             You can download the latest version of BsMatik for Windows from the link below. For installation, simply double-click the exe file and start it without taking any action.
-            <h4><a target="_blank" href="https://github.com/FVuar/BsMatik/releases/latest"><code>Download the Latest Version</code></a></h4>
+            <h4><a class="btn btn-success" target="_blank" href="https://github.com/FVuar/BsMatik/releases/latest"><code>Download the Latest Version</code></a></h4>
         </p>
 
     </div>

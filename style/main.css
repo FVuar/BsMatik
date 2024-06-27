@@ -19,12 +19,38 @@ footer {
     font-size: small;
 }
 
-.banner {
+.img-container {
     width: 100%;
-    height: 619px;
+}
+
+.banner {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 8px;
     margin: 20px auto;
+}
+
+.button {
+    background-color: #f8fafc;
+    background-color: var(--slate-1);
+    border: 1px solid #020617;
+    border: 1px solid var(--slate-11);
+    border-radius: 4px;
+    color: #020617;
+    text-decoration: none;
+    color: var(--slate-11);
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    &:active,&:focus,&:hover {
+        outline: 2px solid #020617;
+        outline: 2px solid var(--slate-11);
+        outline-offset: 2px
+    }
 }
 
 .header-content {
@@ -47,13 +73,14 @@ footer {
 
 @media (max-width: 1000px) {
     .banner {
-        height: 309px;
+        width: 100%;
+        height: 150px;
     }
 }
 
 @media (max-width: 370px) {
     .banner {
-        height: 154px;
+        height: 100px;
     }
 }
 
