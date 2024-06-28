@@ -1,19 +1,21 @@
 <img src="./banner.webp" width="900" height="200" alt="bsmatik" />
 
 # BsMatik
-BsMatik is a calculation application.
-
-
-## Description:  
-BsMatik is a calculation application.  You can easily perform addition, subtraction, multiplication and division operations  from this application.  Thank you for using.  
-
+BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations  from this application.
 
 ## How to Use BsMatik:  
-When you enter the application,  below are the operations of add, subtract, multiply and divide.  Choose one according to the calculation you will make,  then enter your numbers in the textboxes, when you press the equalize button,  it will give you the result.   
+When you enter the application,  below are the operations of add, subtract, multiply and divide.  Choose one according to the calculation you will make,  then enter your numbers in the textboxes, when you press the equalize button,  it will give you the result.
+
+
 
 ## Installation
 You can download the latest version of BsMatik for Windows from the link below. For installation, simply double-click the exe file and start it without taking any action.
 ### [`Download the Latest Version`](https://github.com/FVuar/BsMatik/releases/latest)
+
+<video width="1080" height="600" autoplay loop muted>
+    <source src="preview.mp4" type="video/mp4">
+    Your browser does not support video tags.
+</video>
 
 ## Errors that may occur in the application:  
 
@@ -21,7 +23,7 @@ You can download the latest version of BsMatik for Windows from the link below. 
 - Do not copy-paste string value into text box.  
 - Special Character : .,*/- etc. Do not use.
 
-<br><br>
+
 
 <details>
     <summary>Turkish</summary>
