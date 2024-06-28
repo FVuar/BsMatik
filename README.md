@@ -1,4 +1,4 @@
-<img src="./banner.webp" width="900" height="200" alt="bsmatik" />
+[![Video Önizleme](banner.webp)](preview.mp4)
 
 # BsMatik
 BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations  from this application.
@@ -11,11 +11,6 @@ When you enter the application,  below are the operations of add, subtract, mult
 ## Installation
 You can download the latest version of BsMatik for Windows from the link below. For installation, simply double-click the exe file and start it without taking any action.
 ### [`Download the Latest Version`](https://github.com/FVuar/BsMatik/releases/latest)
-
-<video width="1080" height="600" autoplay loop muted>
-    <source src="preview.mp4" type="video/mp4">
-    Your browser does not support video tags.
-</video>
 
 ## Errors that may occur in the application:  
 
