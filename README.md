@@ -39,4 +39,4 @@ You can download the latest version of BsMatik for Windows from the link below. 
             <li>Lütfen özel karakterler(.,*/- vb.) kullanmayınız.</li>   
         </ul>
     </p>  
-</details>
+</details> 
