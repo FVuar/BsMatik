@@ -1,0 +1,48 @@
+.selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.selection-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.inp {
+    background-color: var(--blue-1);
+    color: var(--blue-11);
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid var(--blue-11);
+    padding: 10px 20px;
+    &:hover, &:focus, &:active, &:focus {
+        outline-offset: 2px;
+        border: 1px solid var(--blue-9);
+        outline: 2px solid var(--blue-5);
+    }
+}
+.control-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.true {
+    background-color: var(--slate-11);
+    border: 1px solid var(--slate-11);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--slate-1);
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    &:active,&:focus,&:hover {
+        outline: 2px solid var(--slate-11);
+        outline-offset: 2px
+    }
+}

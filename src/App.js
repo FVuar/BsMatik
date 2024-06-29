@@ -1,8 +1,10 @@
+import Gui from './components/ui/gui';
+
 function App() {
   return (
-    <h1>
-      hello world
-    </h1>
+    <div className="App">
+      <Gui />
+    </div>
   );
 }
 

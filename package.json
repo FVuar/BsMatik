@@ -5,9 +5,11 @@
   "author": "ahmetcanisik <can.isik.business@gmail.com> (https://ahmetcanisik.com)",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^2.1.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "fvuarjs": "^1.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
