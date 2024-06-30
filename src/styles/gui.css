@@ -5,20 +5,25 @@
     width: 50%;
 }
 .btn {
-    background-color: #f8fafc;
     background-color: var(--slate-1);
-    border: 1px solid #020617;
     border: 1px solid var(--slate-11);
     border-radius: 4px;
-    color: #020617;
     text-decoration: none;
     color: var(--slate-11);
     cursor: pointer;
     outline: none;
     padding: 10px 20px;
-    &:active,&:focus,&:hover {
-        outline: 2px solid #020617;
+    &:active,&:hover,&:focus {
         outline: 2px solid var(--slate-11);
+        outline-offset: 2px;
+    }
+}
+.btn-green {
+    background-color: var(--green-6);
+    border: 1px solid var(--green-6);
+    color: var(--slate-1);
+    &:active,&:focus,&:hover {
+        outline: 2px solid var(--green-6);
         outline-offset: 2px
     }
 }

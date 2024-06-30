@@ -43,6 +43,6 @@
     padding: 10px 20px;
     &:active,&:focus,&:hover {
         outline: 2px solid var(--slate-11);
-        outline-offset: 2px
+        outline-offset: 2px;
     }
 }
