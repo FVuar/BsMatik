@@ -1,4 +1,7 @@
-[![Video Önizleme](banner.webp)](preview.mp4)
+![](banner.webp)
+
+
+![](preview.gif)
 
 # BsMatik
 BsMatik is a calculation application. You can easily perform addition, subtraction, multiplication and division operations  from this application.
